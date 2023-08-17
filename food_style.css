@@ -1,0 +1,590 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior:smooth;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f3f3f3;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #fcec0f;
+  }
+
+header{
+
+  
+    width: 100%;
+  /*   background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(image-graduation/graduation4.jpg); */
+  background: #ffffff;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+   height: 50px;
+   box-shadow:0 0 20px 0px rgba(0, 0, 0, 0.2) ;
+   position: fixed;
+}
+nav{
+    display: flex;
+    padding: 1% 5%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_link{
+    flex: 1;
+    text-align: center;
+
+}
+.nav_link ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+
+}
+.nav_link ul li a{
+    color: rgb(43, 36, 6);
+    text-decoration: none;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+
+}
+.nav_link ul li ::after{
+    content:'';
+    width: 0%;
+    height: 2px;
+    background: #fcec0f;
+    display: block;
+    margin: auto;
+   
+    transition: 0.5s;
+
+}
+.nav_link  ul  li :hover::after{/* يستخدم هذا العنصر لادحال محتوى معين بعد او قبل المحتوى الموجود داخل احد عناصر الصفحة */
+    width: 100%;
+}
+.nav_link  ul  li a:hover{/* يستخدم هذا العنصر لادحال محتوى معين بعد او قبل المحتوى الموجود داخل احد عناصر الصفحة */
+    color: rgb(226, 223, 33);
+}
+/*media query*/
+@media(max-width:700px){/*عشان تتلائم مع حجم الشاشة الصغيرة */
+    /*media query*/
+    /* .logo h1 {
+        font-size: 20px;
+
+
+    } */
+    .nav_link ul li{
+        display: block;
+        
+    } }
+span{
+    color: rgb(219, 216, 15);
+    font-family: Cursive;
+}
+h1{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+  
+
+}
+
+.icons{
+    justify-content: space-between;
+    display: block;
+    margin: auto;
+}
+.icons .ww{
+font-size: 20px;
+color: #000;
+display: inline-block;
+    padding: 4px 7px;
+    position: relative;
+}
+.icons .ww:hover{
+    color: rgb(219, 216, 15);
+}
+.hh2{
+    margin-top: 80px ;
+    margin-left: 60px;
+    margin-bottom: 30px;
+    font-size: 45px;
+}
+p{
+    margin-left: 60px;
+}
+button{
+    margin-left: 60px;
+    color: #fff;
+    font-size: 16px;
+    background: rgb(219, 216, 15);
+    width: 150px;
+    height: 40px;
+    border: solid rgb(219, 216, 15);
+    margin-top: 30px;
+}
+.arrow{
+    color: #fff;
+    font-size: 22px;
+    padding-left: 10px; 
+font-weight: bold;
+    transition: 0.s;
+}
+.arrow:hover{
+    padding-left: 17px;
+}
+#food1{
+    display: flex;
+}
+#food2{
+    display: flex;
+}
+.imgfood img{
+    margin-top: 40px;
+    margin-left: 100px;
+   /*  padding-left: 20px; */
+}
+.imgfood2 img{
+    margin-top: 80px ;
+    margin-left: 60px;
+    margin-bottom: 30px;
+    padding-left: 20px;
+}
+h2,h3{
+    margin-top: 70px;
+    margin-left: 70px;
+    font-size: 33px;
+}
+.lorem{
+    margin-right: 40px;
+    margin-left: 70px;
+    margin-top: 20px;
+}
+.us{
+    margin-right: 30px;
+    margin-left: 50px;
+}
+.food{
+    padding-left: 20px;
+}
+.hh{
+    text-align: center;
+    font-size: 40px;
+  
+}
+.spann{
+    text-decoration: underline rgb(219, 216, 15);
+    color: rgb(219, 216, 15);
+    font-family: Cursive;
+}
+.parent{
+    display: flex;
+    margin-bottom: 20px;
+}
+.picture{
+    width: 300px;
+    height: 490px;
+    background:rgb(255, 255, 255);
+    margin-left: 30px;
+    box-shadow:0 0 20px 0px rgba(0, 0, 0, 0.2) ;
+    overflow: hidden;
+ /*  transition: 0.5s; */
+}
+.picture img{
+    margin: 10px;
+    transition: scale 400ms;
+    
+}
+.picture img:hover{
+ scale: 120%;
+}
+/* .picture img:hover{
+font-size: 20px;
+
+} */
+
+.word{
+    
+    color: rgb(219, 216, 15);
+    font-size: 30px;
+    margin-left: 90px;
+    font-weight: bold;
+ 
+}
+.lorem{
+    margin: 20px;
+    text-align: center;
+}
+b{
+    margin-left: 100px;
+    font-size: 20px;
+  
+}
+.icons{
+   margin-left: 80px;
+  
+}
+.icons i{
+    color: rgb(236, 236, 29);
+}
+.newbutoon{
+    margin-left: 60px;
+    color: #fff;
+    background: #000;
+    width: 170px;
+    height: 40px;
+    border: solid #000;
+   margin-bottom: 40px;
+}
+.imgparnet{
+    display: flex;
+    margin-left: 25px;
+}
+/*-----------------------------gallary---------------------------------*/
+#gallary{
+    width: 100%;
+   
+}
+
+
+.superGallary{
+    display: flex;
+    margin-left: 30px;/**/
+    
+}
+.superGallary .hover_box{
+    width: 300px;
+    height: 200px;
+    border: 2px solid #FFF;
+    margin: 30px auto;
+    position: relative; /* عشان الp;osition for kides absolute فا لالزم يكون relative*/
+    overflow: hidden;/*عشان تخفي الشغلات الي بتطلع برا */
+    background: hsla(0, 0%, 0%, 0.932);
+}
+img{
+    transition: .4s;
+}
+
+.superGallary .hover_box:hover img{
+    opacity: .3 ;
+  
+}
+.superGallary .hover_box p{
+    color: #ecc4c4;
+    font-weight: bold;
+    font-size: 15px;
+   
+    
+  
+    top: 80px;
+    margin: 0;
+   
+    position: absolute;
+  visibility: hidden;
+    
+   
+    padding: 5px 8px;
+
+}
+.h3-hover{
+    color:  yellow;
+    font-weight: bold;
+    font-size: 15px;
+    left: 60px;
+    
+  
+    bottom: 20px;
+    margin: 0;
+   
+    position: absolute;
+  visibility: hidden;
+    
+   
+    padding: 5px 8px;
+}
+.superGallary .hover_box:hover p{
+    overflow: visible;
+   visibility: visible;
+  text-align: center;
+    bottom:60px;
+   
+}
+.h3-hover:hover{
+    overflow: visible;
+   visibility: visible;
+  
+    top: 25px;
+    left: 100px;
+    font-size: 35px;
+   
+}
+.superGallary.hover_box.b_G{
+
+    color: #000000;
+    font-weight: bold;
+    top: 150px;
+    left: 80px;
+    background-color: yellow;
+  
+    bottom: 0px;
+    margin: 0;
+   
+    position: absolute;
+  visibility: hidden;
+  
+  font-size: 12px;
+ 
+  width: 100px;
+  height: 30px;
+  transform: translate(100px,150px);
+  border: solid rgb(219, 216, 15);
+ transition: .4s;
+   
+   
+
+}
+.superGallary.hover_box:hover.b_G{
+
+position: absolute;
+    overflow: visible;
+   visibility: visible;
+  transform: translate(0,0);
+  
+   
+}
+
+
+ 
+ /*gallary*/
+ .hover_box{
+    width:500px;
+    height: 250px;
+    border: 2px solid #FFF;
+    margin-left: 30px;
+ 
+   /*  margin: 30px auto; */
+    position: relative; /* عشان الp;osition for kides absolute فا لالزم يكون relative*/
+    overflow: hidden;/*عشان تخفي الشغلات الي بتطلع برا */
+    background: hsla(0, 0%, 0%, 0.932);
+}
+img{
+    transition: .4s;
+}
+
+.hover_box:hover img{
+    opacity: .3 ;
+  
+}
+.lorem2{
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+   
+    
+  
+    top: 90px;
+    margin: 0;
+   
+    position: absolute;
+  visibility: hidden;
+    
+   
+    padding: 5px 8px;
+
+}
+.hh3{
+    color:  yellow;
+    font-weight: bold;
+    font-size: 20px;
+    left: 60px;
+    
+  
+    bottom: 15px;
+    margin: 0;
+   
+    position: absolute;
+  visibility: hidden;
+    
+   
+    padding: 5px 8px;
+}
+.hover_box:hover .lorem2{
+    overflow: visible;
+   visibility: visible;
+  text-align: center;
+    bottom:60px;
+   
+}
+.hover_box:hover .hh3{
+   
+   visibility: visible;
+  
+    top: 30px;
+    left: 150px;
+    font-size: 35px;
+   
+}
+.btn{
+
+    color: #000000;
+    font-weight: bold;
+    top: 170px;
+    left: 80px;
+    background-color: yellow;
+  
+    bottom: 0px;
+    margin: 0;
+   
+    position: absolute;
+  visibility: hidden;
+  
+  font-size: 22px;
+  background: rgb(219, 216, 15);
+  width: 200px;
+  height: 40px;
+  transform: translate(100px,100px);
+  border: solid rgb(219, 216, 15);
+ transition: .4s;
+   
+   
+
+}
+.hover_box:hover .btn{
+
+
+    overflow: visible;
+   visibility: visible;
+  transform: translate(0,0);
+  
+   
+}
+.containre{
+    display: flex;
+    margin-top: 10px;
+    margin-right: 10px;
+    
+}
+#review{
+width: 100%;
+height: 600px;
+background-color: #f8f8f8;
+}
+.review{
+    display: flex;
+    padding-left: 30px;
+}
+.custom1{
+    width: 300px;
+    height: 450px;
+    border:1px solid hsla(0, 0%, 0%, 0.274);
+    box-shadow:0 0 20px 0px rgba(15, 14, 14, 0.2) ;
+    margin-left: 20px;
+}
+.custom1 img{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    margin-left: 70px;
+    margin-top: 20px;
+}
+h5{
+    font-size: 20px;
+    padding-left: 100px;
+    margin-top: 10px;
+}
+.paragraph{
+    font-size: 18px;
+    padding-right: 20px;
+    margin-top: 20px;
+}
+#order{
+    width: 100%;
+    height: 500PX;
+  background-color: #ffffff;
+
+}
+.super3{
+    display: flex;
+}
+.photo img{
+    width: 500px;
+    height: 400px;
+
+}
+.lab1{
+    display: flex;
+}
+label{
+    display: block;
+    font-size: 24px;
+    color: #000;
+    margin-top: 10px;
+    
+
+}
+input{
+    width: 300px;
+    height: 30px;
+    background-color: rgb(214, 210, 210);
+    border:1px solid rgb(180, 178, 178);
+    border-radius: 10px;
+    box-shadow:0 0 20px 0px rgba(15, 14, 14, 0.2) ;
+    
+}
+table tr{
+    margin-top: 10px;
+}
+table tr td{
+    margin-left: 20px;
+    padding-left: 30px;
+}
+.form{
+    margin-left: 100px;
+    margin-top: 80px;
+}
+footer{
+    width: 100%;
+    height: 250px;
+    background-color: #e7e6e6;
+}
+.footerdiv{
+    display: flex;
+}
+.footerdiv .location h5{
+    color: #000000;
+    font-weight: bold;
+   
+}
+.location{
+    margin-left: 30px;
+    margin-top: 20px;
+
+}
+.footerdiv .location p{
+    margin-top: 10px;
+    color: #000000;
+   
+}
+.footerdiv .location .divpp{
+    margin-left: 50px;
+}
+.lastdiv{
+    margin-left: 470px;
+    margin-top: 30px;
+}
+.lastdiv .Design{
+    font-weight: bold;
+    font-size: 20px;
+}
+.containre{
+    display: flex;
+}
